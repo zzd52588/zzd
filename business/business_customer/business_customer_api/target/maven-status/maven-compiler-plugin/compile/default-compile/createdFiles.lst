@@ -1,0 +1,2 @@
+com\csqf\business\customer\feign\FeginCustomerService.class
+com\csqf\business\customer\feign\FeginCustomerServiceFallback.class

@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: provider-cache
+  redis:
+    lettuce:
+      pool:
+        max-active: 8
+        min-idle: 0
+    sentinel:
+      master: mymaster
+      nodes: redis.me:26379,redis.me:26380,redis.me:26381
+
+dubbo:
+  scan:
+    base-packages: com.csqf.provider.cache.service.impl
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: nacos://nacos.me:8848

@@ -1,0 +1,3 @@
+com\csqf\rocketmq\service\ProviderService.class
+com\csqf\rocketmq\ProviderMQApplication.class
+com\csqf\rocketmq\service\MySource.class

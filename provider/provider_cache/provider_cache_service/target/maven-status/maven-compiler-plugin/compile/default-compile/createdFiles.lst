@@ -1,0 +1,3 @@
+com\csqf\provider\cache\configurations\RedisConfiguration.class
+com\csqf\provider\cache\service\impl\RedisServiceImpl.class
+com\csqf\provider\cache\ProviderCacheApplication.class

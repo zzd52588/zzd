@@ -1,0 +1,2 @@
+com\csqf\business\admin\feign\FeginAdminService.class
+com\csqf\business\admin\feign\FeginAdminServiceFallback.class

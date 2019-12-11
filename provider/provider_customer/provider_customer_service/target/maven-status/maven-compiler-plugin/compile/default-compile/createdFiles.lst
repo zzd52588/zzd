@@ -1,0 +1,4 @@
+com\csqf\provider\customer\service\impl\UserServiceImpl.class
+com\csqf\provider\customer\configuration\MyBatisPlusConfiguration.class
+com\csqf\provider\customer\mapper\UserMapper.class
+com\csqf\provider\customer\ProviderCustomerApplication.class

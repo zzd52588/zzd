@@ -1,0 +1,2 @@
+com\csqf\provider\customer\entity\User.class
+com\csqf\provider\customer\service\IUserService.class

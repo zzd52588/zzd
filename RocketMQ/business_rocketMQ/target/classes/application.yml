@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: rocketmq-consumer
+  cloud:
+    stream:
+      rocketmq:
+        binder:
+          name-server: mq.me:9876
+        bindings:
+          input: {consumer.orderly: true}
+      bindings:
+        input: {destination: sms, content-type: application/json, group: sms-group, consumer.maxAttempts: 1}
+        input1: {destination: coupon, content-type: application/json, group: coupon-group, consumer.maxAttempts: 1}
+server:
+  port: 0

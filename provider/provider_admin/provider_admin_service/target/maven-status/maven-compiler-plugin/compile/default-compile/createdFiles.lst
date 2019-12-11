@@ -1,0 +1,4 @@
+com\csqf\provider\admin\service\impl\AdminServiceImpl.class
+com\csqf\provider\admin\mapper\AdminMapper.class
+com\csqf\provider\admin\ProviderAdminApplication.class
+com\csqf\provider\admin\configuration\MyBatisPlusConfiguration.class

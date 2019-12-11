@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.97.194.236:3306/supermarket?useUnicode=true&useSSL=false&characterEncoding=utf8
+    username: root
+    password: 123456
+    hikari:
+      minimum-idle: 5
+      idle-timeout: 600000
+      maximum-pool-size: 10
+      auto-commit: true
+      pool-name: MyHikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+  application:
+    name: provider-customer-service
+mybatis-plus:
+  type-aliases-package: com.csqf.provider.*.entity
+  mapper-locations: classpath:mapper/**/*.xml
+dubbo:
+  scan:
+    base-packages: com.csqf.provider.*.service.impl
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: nacos://192.168.230.129:8848
+server:
+  port: 0
+
